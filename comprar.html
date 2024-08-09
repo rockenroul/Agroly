@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script/index.js"></script>
+    <link rel="stylesheet" href="estilo/reset.css">
+    <link rel="stylesheet" href="estilo/comprar.css">
+    <title>Marketplace</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">    <img class="logo" src="estilo/imgs/logo.png"> </a>
+        <a class="home" href="index.html"><img src="estilo/imgs/home.png" width=30vw ></a>
+        <a href="noticia.html" class="news"><img src="estilo/imgs/noticias.png" width="30vw"></a>
+        <a href="marketplace.html" class="market"><img src="estilo/imgs/marketplace.png" width="30vw"></a>
+        <div id="dropdownMenu" class="menu">
+            <p class="Eu">Eu</p>
+             <p class="MinhaConta">Minha Conta</p>
+             <div class="linha">a</div>
+             <p class="Conteudo">Conteudo</p>
+             <div class="linha2">a</div>
+             <p class="Configuracoes">Configurações</p>
+             <div class="linha3">a</div>
+             <a href="login.html" class="Sair">Sair</a>
+         </div>
+        <img onclick="toggleHeight()" onclick="toggleMenu()" class="usuario" src="estilo/imgs/usuario.png">
+    </div>
+
+    <div class="nav">
+        <p> Tags </p>
+
+        <ul>
+            <div class="linha"> a</div>
+           <li> <input type="checkbox" id="check"> Pecuária </input> </li> 
+           <li> <input type="checkbox" id="check"> Plantas </input></li>
+           <li><input type="checkbox" id="check"> Maquinas </input> </li>
+           <li><input type="checkbox" id="check"> Variados </input></li>
+        </ul>
+    </div>
+
+     <main>
+        <div class="bloco-cinza"></div>
+            <div id="blocoPrincipal" class="bloco-conteudo">
+                <div class="inicio"><h1>Marketplace</h1></div>
+                <div class="linha2"> a</div>
+                <h1 class="data">01/07/2024</h1>
+                <div class="pesquisa"><input type="search">
+                <img class="lupa" src="estilo/imgs/Lupa.png">
+                </div>
+                <h2 class="em_alta">Em alta</h2>
+
+                <div class="verde"> a</div>
+
+
+                    <div class="cards">
+                     <div class="card">
+                             <div class="cardBlocoDentro">
+                             </div>
+                             <h1>Produto </h1>
+                             <por>por FIHGGGFH</por>
+                             <preco>R$2000,99</preco>
+                 
+                     </div>
+                 
+                     <div class="card2">
+                         <div class="cardBlocoDentro">
+                         </div>
+                         <h1>Produto</h1>
+                         <por>por FIHGGGFH</por>
+                         <preco>R$2000,99</preco>
+                   </div>
+                 
+                   <div class="card3">
+                     <div class="cardBlocoDentro">
+                     </div>
+                     <h1>Produto</h1>
+                     <por>por FIHGGGFH</por>
+                     <preco>R$2000,99</preco>
+                 
+                 </div>
+                 </div>
+
+                 <vermais>
+                    <a href="">Ver mais</a>
+                 </vermais>
+                 
+                 </div>
+            </div>
+     </main>
+</body>
+</html>
+
+

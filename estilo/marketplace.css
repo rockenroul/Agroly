@@ -1,0 +1,217 @@
+    @font-face {
+      font-family: HK;
+      src: url(HankenGrotesk-VariableFont_wght.ttf);
+    }
+
+    body {
+      background-color: #ffffff;
+      font-family: HK;
+    }
+
+    .header {
+      position: fixed;
+      background-color: #83ce51;
+      color: white;
+      height: 10vh;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .header .logo {
+      position: absolute;
+      top: 4%;
+      left: 2%;
+      height: 9vh;
+      border-radius: 100vh;
+    }
+
+    .header .home,
+    .header .news,
+    .header .market {
+      position: absolute;
+      top: 27%;
+      font-size: 4vh;
+      text-decoration: none;
+      color: white;
+    }
+
+    .header .home {
+      left: 82%;
+    }
+
+    .header .news {
+      left: 85%;
+    }
+
+    .header .market {
+      left: 88%;
+    }
+
+    .header .usuario {
+      position: absolute;
+      top: 4%;
+      left: 94%;
+      background-color: white;
+      border-radius: 100vh;
+      height: 9vh;
+    }
+
+    /* Main */
+    main {
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+
+    main .bloco-cinza {
+      background-color: #ccc;
+      width: 60%;
+      height: 76vh;
+      position: absolute;
+      top: 24%;
+      left: 3.5%;
+      z-index: 0;
+    }
+
+    p{
+      top: 10vh;
+      position: absolute;
+      color: #aba9aa;
+      font-size: 2vw;
+      left: 10vh;
+    }
+
+    main .bloco-conteudo {
+      border: 1px solid black;
+      position: relative;
+      top: 8vw;
+      left: 5%;
+      background-color: rgb(255, 255, 255);
+      width: 90%;
+      height: 99vh;
+      z-index: 1;
+    }
+
+    .container {
+      position: absolute;
+      left: 25vh;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .upload-container {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .upload-label {
+      position: relative;
+      top: 20vh;
+      height: 50vh;
+      width: 50vh;
+      display: flex;
+      cursor: pointer;
+      background-color: #aba9aa;
+      color: white;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+    
+    .preview {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: auto;
+    }
+
+    .preview img {
+      position: absolute;
+      top: 24.5vh;      
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+    }
+
+
+    .bloco-produto,
+    .bloco-descricao,
+    .bloco-valor {
+      border: 2px solid black;
+      background-color: rgb(255, 255, 255);
+      z-index: 1;
+    }
+
+    .bloco-produto {
+      position: absolute;
+      top: 15vh;
+      left: 50%;
+      width: 25%;
+      height: 5vh;
+      font-size: 1.5vw;
+      color: #bfbfbf;
+    }
+
+    .bloco-descricao {
+      justify-items: start;
+      position: absolute;
+      top: 25vh;
+      left: 50%;
+      width: 35%;
+      height: 20vh;
+      font-size: 1.5vw;
+      color: #bfbfbf;
+    }
+
+    vp{
+      font-size: 2vw;
+      position: absolute;
+      top: 50vh;
+      left: 50%;
+    }
+
+    .bloco-valor {
+      position: absolute;
+      top: 55vh;
+      left: 50%;
+      width: 25%;
+      height: 5vh;
+      font-size: 1.5vw;
+      color: #bfbfbf;
+    }
+
+    button {
+      position: absolute;
+      background-color: #83ce51;
+      top: 65vh;
+      left: 50%;
+      color: white; 
+      border: none; 
+      border-radius: 50px;
+      padding: 20px 100px; 
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:disabled {
+      background-color: #bfbfbf; 
+      cursor: not-allowed; 
+    }
+
+    button:not(:disabled):hover {
+      background-color: #64a03d; 
+    }
+
+    button:not(:disabled):active {
+      background-color: #2b5311; 
+    }
+
+
+
+
+
+
+  

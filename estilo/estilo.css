@@ -1,0 +1,732 @@
+@font-face {
+    font-family: HK;
+    src: url(HankenGrotesk-VariableFont_wght.ttf);
+}
+
+@keyframes expandHeight{
+    0% {
+        height: 0;
+    }
+    100%{
+        height: 35vh;
+    }
+}
+
+
+
+body{
+    background-color: #ffffff;
+    font-family: HK;
+}
+
+
+/*Header -=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+.header{
+    position: fixed;
+    background-color: #83ce51;
+    color: white;
+    height: 10vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.header .logo {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    height: 9vh;
+    border-radius: 100vh;  
+}
+
+.header .home{
+    position: absolute;
+    left: 82%;
+    top: 27%;
+    font-size: 4vh;
+    text-decoration: none;
+    color: white;
+}
+
+.header .news{
+    position: absolute;
+    left: 85%;
+    top: 27%;
+    font-size: 4vh;
+    text-decoration: none;
+    color: white;
+}
+
+.header .market{
+    position: absolute;
+    left: 88%;
+    top: 27%;
+    font-size: 4vh;
+    text-decoration: none;
+    color: white;
+}
+
+.header .menu{
+    color: black;
+    position: relative;
+    background-color: white;
+    width: 10%;
+    height: 0vh;
+    left: 90%;
+    font-size: 2.7vh;
+    z-index: 2;
+    border: 1px solid black;
+    text-align: center;
+    transition: height 0.3s ease;
+    overflow: hidden;
+}
+
+.header .menu.expanding{
+    height: 35vh;
+}
+
+.header .menu .Eu{
+    position: relative;
+    top: 4vh;
+    left: -5vh;
+}
+
+.header .menu .MinhaConta{
+    position: relative;
+    top: 10vh;
+    left: 1vh;
+}
+
+.header .menu .linha{
+    position: relative;
+    background-color: black;
+    width: 90%;
+    height: 0.2vh;
+    color: transparent;
+    top: 10.5vh;
+    left: 1vh;
+}
+
+.header .menu .linha2{
+    position: relative;
+    background-color: black;
+    width: 90%;
+    height: 0.2vh;
+    color: transparent;
+    top: 11.5vh;
+    left: 1vh;
+}
+
+.header .menu .linha3{
+    position: relative;
+    background-color: black;
+    width: 90%;
+    height: 0.2vh;
+    color: transparent;
+    top: 12.5vh;
+    left: 1vh;
+}
+
+.header .menu .Conteudo{
+    position: relative;
+    top: 11vh;
+    left: 1vh;
+}
+
+.header .menu .Configuracoes{
+    position: relative;
+    top: 12vh;
+    left: 1vh;
+}
+
+.header .menu .Sair{
+    position: relative;
+    top: 13vh;
+    left: 1vh;
+    color: black;
+    text-decoration: none;
+}
+
+.header .usuario{
+    position: absolute;
+    top: 4%;
+    left: 94%;
+    background-color: white;
+    border-radius: 100vh;
+    height: 9vh;
+    z-index: 3;
+}
+
+
+/*Nav -=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
+.nav{
+    position: fixed;
+    border: 1px solid black;
+    top: 20%;
+    left: 2%;
+    border-radius: 12px;
+    height: 50vh;
+    width: 14vw;
+    z-index: 2;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav b{
+    position: relative;
+    top: 3vh;
+    left: 1vh;
+    background-color: #83ce51;
+    height: 9vh;
+    width: 13vw;
+    border-radius: 10vw;
+    font-size: 1.7vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav b:hover{
+    background-color: #aff581;
+}
+
+
+.nav ul{
+    top: 6vh;
+    position: relative;
+    font-size: 2vw;
+    list-style-type: none;
+
+}
+
+.nav ul li{
+    position: relative;
+    top: 2vh;
+}
+
+.nav ul li input[type=checkbox]{
+    border: 2vh;
+    width: 3.7vh;
+    height: 3.7vh;
+    top: 2vh;
+    border: 0;
+}
+
+#check:checked{
+    accent-color: #83ce51;  
+}
+
+.nav ul p{
+    position: relative;
+    left: 4vw;
+}
+
+.nav .linha{
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 0.4vh;
+    color: transparent;
+    top: 5.2vh;
+    left: 0;
+}
+
+
+
+
+/* Main -=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+main{
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+main .bloco-cinza {
+    background-color: #ccc;
+    width: 60%;
+    height: 291vh;
+    position: absolute;
+    top: 24%;
+    left: 18%;
+    z-index: 0;
+}
+
+main .noticiaEmAlta1 h1{
+    position: relative;
+    font-size: 1.5vw;
+   
+}
+
+
+main .noticiaEmAlta2 h1{
+    position: relative;
+    font-size: 1.5vw;
+}
+
+
+main .noticiaEmAlta3 h1{
+    position: relative;
+    font-size: 1.5vw;
+}
+
+
+main .noticiaEmAlta4 h1{
+    position: relative;
+    font-size: 1.5vw;
+
+}
+
+main .bloco-cinza-card img{
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 1;
+
+
+}
+
+
+main .bloco-conteudo{
+border: 1px solid black;
+    position: relative;
+    top: 8vw;
+    left: 19.5%;
+    background-color: rgb(255, 255, 255);
+    width:60%;
+    height: 314vh;
+    z-index: 1;
+
+}
+
+
+.bloco-conteudo .inicio{
+    position: relative;
+    left: 5.5vh;
+    top:2vh;
+    font-size: 12vh;
+    font-weight: 600;
+    background-color: white;
+    width: 30vh;
+    z-index: 1;
+}
+
+.bloco-conteudo .linha2{
+        position: relative;
+        background-color: black;
+        width: 44vw;
+        height: 0.6vh;
+        color: transparent;
+        left: 25%;
+        z-index: 0;
+}
+
+.bloco-conteudo .data{
+    position: relative;
+    top: -5vh;
+    left: 80%;
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+.bloco-conteudo .pesquisa{
+    background-color: #ccc;
+    border-radius: 70px;
+    width: 45vh;
+    height: 5vh;
+    position: relative;
+    top: 0;
+    left: 38%;
+    border: none;
+}
+
+.bloco-conteudo .pesquisa input{
+    background-color: #ccc;
+    border-radius: 70px;
+    width: 45vh;
+    height: 5vh;
+    position: relative;
+    border: none;
+
+}
+
+.bloco-conteudo .lupa{
+    position: absolute;
+    width: 2vw;
+    left: 90%;
+}
+
+.bloco-conteudo .em_alta{
+    position: relative; 
+    left: 4vw;
+    font-size: 4vh;
+    font-weight: 550;
+}
+
+/* FEED ******************************************************************************************/
+
+
+
+.noticiaEmAlta1{
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 2%;
+    left: 2vw;
+    background-color: white;
+    width: 92%;
+    height: 53vh;
+}
+
+.noticiaEmAlta1:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in;
+}
+
+.noticiaEmAlta1 .bloco-cinza-card{
+    border-radius: 30px;
+    width: 97%;
+    height: 75%;
+    left: 2vh;
+    top: 2vh;
+    position: relative;
+    background-color: #8d8989;
+}
+
+.bloco-cinza-card a{
+    position: relative;
+    color: white;
+    top: 30vh;
+    left: 3%;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.noticiaEmAlta1 h1{
+    position: relative;
+    top: 2vw;
+    left: 5vh;
+}
+
+
+.noticiaEmAlta2{
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 5%;
+    left: 2vw;
+    background-color: white;
+    width: 92%;
+    height: 53vh;
+}
+
+.noticiaEmAlta2:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in;
+}
+
+
+.noticiaEmAlta2 .bloco-cinza-card{
+    border-radius: 30px;
+    width: 97%;
+    height: 75%;
+    left: 2vh;
+    top: 2vh;
+    position: relative;
+    background-color: #8d8989;
+}
+
+.bloco-cinza-card a{
+    position: relative;
+    color: white;
+    top: 30vh;
+    left: 3%;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.noticiaEmAlta2 h1{
+    position: relative;
+    top: 2vw;
+    left: 5vh;
+}
+
+.noticiaEmAlta3{
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 9%;
+    left: 2vw;
+    background-color: white;
+    width: 92%;
+    height: 53vh;
+}
+
+
+.noticiaEmAlta3:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in;
+}
+
+
+.noticiaEmAlta3 .bloco-cinza-card{
+    border-radius: 30px;
+    width: 97%;
+    height: 75%;
+    left: 2vh;
+    top: 2vh;
+    position: relative;
+    background-color: #8d8989;
+}
+
+.bloco-cinza-card a{
+    position: relative;
+    color: white;
+    top: 30vh;
+    left: 3%;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.noticiaEmAlta3 h1{
+    position: relative;
+    top: 2vw;
+    left: 5vh;
+}
+
+.noticiaEmAlta4{
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 13%;
+    left: 2vw;
+    background-color: white;
+    width: 92%;
+    height: 53vh;
+}
+
+.noticiaEmAlta4:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in;
+}
+
+
+.noticiaEmAlta4 .bloco-cinza-card{
+    border-radius: 30px;
+    width: 97%;
+    height: 75%;
+    left: 2vh;
+    top: 2vh;
+    position: relative;
+    background-color: #8d8989;
+}
+
+.bloco-cinza-card a{
+    position: relative;
+    color: white;
+    top: 30vh;
+    left: 3%;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.noticiaEmAlta4 h1{
+    position: relative;
+    top: 2vw;
+    left: 5vh;
+}
+
+/* aside -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.card{
+    position: absolute;
+    background-color: white;
+    width: 35vh;
+    height: 45vh;
+    top: 13vh;
+    left: 80vw;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.card .cardBlocoDentro{
+    position: relative;
+    border-radius: 30px;
+    width: 92%;
+    height: 28vh;
+    left: 1.5vh;
+    top: 2.5vh;
+    position: relative;
+    background-color: #8d8989;
+}
+.card h1{
+    top: 5vh;
+    left: 2vh;
+    position: relative;
+}
+
+.card .cardBlocoDentro a{
+    position: relative;
+    color: white;
+    top: 18vh;
+    left: 2vh;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.card .cardBlocoDentro img{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+
+
+.card2{
+    position: absolute;
+    background-color: white;
+    width: 35vh;
+    height: 45vh;
+    top: 60vh;
+    left: 80vw;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.card2 .cardBlocoDentro{
+    position: relative;
+    border-radius: 30px;
+    width: 92%;
+    height: 28vh;
+    left: 1.5vh;
+    top: 2.5vh;
+    position: relative;
+    background-color: #8d8989;
+}
+.card2 h1{
+    top: 5vh;
+    left: 2vh;
+    position: relative;
+}
+
+.card2 .cardBlocoDentro a{
+    position: relative;
+    color: white;
+    top: 18vh;
+    left: 2vh;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.card2 .cardBlocoDentro img{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+
+.card3{
+    position: absolute;
+    background-color: white;
+    width: 35vh;
+    height: 45vh;
+    top: 107vh;
+    left: 80vw;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.card3 .cardBlocoDentro{
+    position: relative;
+    border-radius: 30px;
+    width: 92%;
+    height: 28vh;
+    left: 1.5vh;
+    top: 2.5vh;
+    position: relative;
+    background-color: #8d8989;
+}
+.card3 h1{
+    top: 5vh;
+    left: 2vh;
+    font-size: 1.2vw;
+    position: relative;
+}
+
+.card3 .cardBlocoDentro a{
+    position: relative;
+    color: white;
+    top: 18vh;
+    left: 2vh;
+    font-size: 1.5vw;
+    font-weight: 600;
+    
+}
+
+.card3 .cardBlocoDentro img{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+
+
+.card4{
+    position: absolute;
+    background-color: white;
+    width: 35vh;
+    height: 45vh;
+    top: 154vh;
+    left: 80vw;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.card4 .cardBlocoDentro{
+    position: relative;
+    border-radius: 30px;
+    width: 92%;
+    height: 28vh;
+    left: 1.5vh;
+    top: 2.5vh;
+    position: relative;
+    background-color: #8d8989;
+}
+.card4 h1{
+    top: 5vh;
+    left: 2vh;
+    position: relative;
+    font-size: 1vw;
+}
+
+.card4 .cardBlocoDentro a{
+    position: relative;
+    color: white;
+    top: 18vh;
+    left: 2vh;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.card4 .cardBlocoDentro img{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 1;
+}
+

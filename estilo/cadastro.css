@@ -1,0 +1,105 @@
+@font-face {
+    font-family: HK;
+    src: url(HankenGrotesk-VariableFont_wght.ttf);
+  }
+
+  body {
+    background-color: #ffffff;
+    font-family: HK;
+  }
+
+.background{
+    width: 430px;
+    height: 480px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(to right, #406924, #83ce51);
+    left: -90px;
+    top: -110px;
+    opacity: 0,500;
+}
+.shape:last-child{
+    background: linear-gradient(#806b75, #aba9aa);
+    left: 300px;
+    bottom: -110px;
+}
+form{
+    height: 650px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+form * {
+   font-family: HK;
+   color: #000000;
+   letter-spacing: 0.5px;
+   outline: none;
+   border: none;
+}
+form h3{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 2px;
+    text-align: center;
+}
+
+flecha a {
+    position: absolute;
+    top: 2vh;
+    left: 3vh;
+}
+
+flecha a img{
+    height: 4vh;
+    width: 4vh;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #000000;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #aba9aa;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+} 

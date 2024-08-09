@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketplace</title>
+<script src="script/marketplace.js" defer></script>
+<link rel="stylesheet" href="estilo/reset.css">
+<link rel="stylesheet" href="estilo/marketplace.css">
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img class="logo" src="estilo/imgs/logo.png" alt="Logo"></a>
+        <a class="home" href="index.html"><img src="estilo/imgs/home.png" width="30vw" alt="Home"></a>
+        <a href="noticia.html" class="news"><img src="estilo/imgs/noticias.png" width="30vw" alt="Notícias"></a>
+        <a href="comprar.html" class="market"><img src="estilo/imgs/marketplace.png" width="30vw" alt="Marketplace"></a>
+        <div id="dropdownMenu" class="menu">
+            <p class="Eu">Eu</p>
+             <p class="MinhaConta">Minha Conta</p>
+             <div class="linha">a</div>
+             <p class="Conteudo">Conteudo</p>
+             <div class="linha2">a</div>
+             <p class="Configuracoes">Configurações</p>
+             <div class="linha3">a</div>
+             <a href="login.html" class="Sair">Sair</a>
+         </div>
+        <img onclick="toggleHeight()" onclick="toggleMenu()" class="usuario" src="estilo/imgs/usuario.png">
+    </div>
+
+    <main>
+        <div class="bloco-cinza"></div>
+        <div id="blocoPrincipal" class="bloco-conteudo">
+            <p>Vender Produto</p>
+            
+            <div class="container">
+                <div class="upload-container">
+                    <label for="fileInput" class="upload-label">
+                    </label>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                  </div>
+                  <div id="preview" class="preview"></div>
+            </div>
+
+            <form id="meuFormulario">
+                <input type="text" id="blocoproduto" class="bloco-produto" placeholder="Escreva aqui o produto..." required>
+                <input type="text" id="blocodescricao" class="bloco-descricao" placeholder="Descrição..." required>
+                <vp>Valor do Produto:</vp>
+                <input type="text" id="blocovalor" class="bloco-valor" placeholder="Valor..." required>
+                <button type="submit" id="enviar" disabled>Postar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
+

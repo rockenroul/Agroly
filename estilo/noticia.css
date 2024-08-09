@@ -1,0 +1,514 @@
+@font-face {
+    font-family: HK;
+    src: url(HankenGrotesk-VariableFont_wght.ttf);
+}
+
+@keyframes expandHeight{
+    0% {
+        height: 0;
+    }
+    100%{
+        height: 35vh;
+    }
+}
+
+
+
+body{
+    background-color: #ffffff;
+    font-family: HK;
+}
+
+
+/*Header -=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+.header{
+    position: fixed;
+    background-color: #83ce51;
+    color: white;
+    height: 10vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.header .logo {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    height: 9vh;
+    border-radius: 100vh;  
+}
+
+.header .home{
+    position: absolute;
+    left: 82%;
+    top: 27%;
+    font-size: 4vh;
+    text-decoration: none;
+    color: white;
+}
+
+.header .news{
+    position: absolute;
+    left: 85%;
+    top: 27%;
+    font-size: 4vh;
+    text-decoration: none;
+    color: white;
+}
+
+.header .market{
+    position: absolute;
+    left: 88%;
+    top: 27%;
+    font-size: 4vh;
+    text-decoration: none;
+    color: white;
+}
+
+.header .menu{
+    color: black;
+    position: relative;
+    background-color: white;
+    width: 10%;
+    height: 0vh;
+    left: 90%;
+    font-size: 2.7vh;
+    z-index: 2;
+    border: 1px solid black;
+    text-align: center;
+    transition: height 0.3s ease;
+    overflow: hidden;
+}
+
+.header .menu.expanding{
+    height: 35vh;
+}
+
+.header .menu .Eu{
+    position: relative;
+    top: 4vh;
+    left: -5vh;
+}
+
+.header .menu .MinhaConta{
+    position: relative;
+    top: 10vh;
+    left: 1vh;
+}
+
+.header .menu .linha{
+    position: relative;
+    background-color: black;
+    width: 90%;
+    height: 0.2vh;
+    color: transparent;
+    top: 10.5vh;
+    left: 1vh;
+}
+
+.header .menu .linha2{
+    position: relative;
+    background-color: black;
+    width: 90%;
+    height: 0.2vh;
+    color: transparent;
+    top: 11.5vh;
+    left: 1vh;
+}
+
+.header .menu .linha3{
+    position: relative;
+    background-color: black;
+    width: 90%;
+    height: 0.2vh;
+    color: transparent;
+    top: 12.5vh;
+    left: 1vh;
+}
+
+.header .menu .Conteudo{
+    position: relative;
+    top: 11vh;
+    left: 1vh;
+}
+
+.header .menu .Configuracoes{
+    position: relative;
+    top: 12vh;
+    left: 1vh;
+}
+
+.header .menu .Sair{
+    position: relative;
+    top: 13vh;
+    left: 1vh;
+    color: black;
+    text-decoration: none;
+}
+
+.header .usuario{
+    position: absolute;
+    top: 4%;
+    left: 94%;
+    background-color: white;
+    border-radius: 100vh;
+    height: 9vh;
+    z-index: 3;
+}
+
+
+/* Main -=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+main{
+overflow-x: hidden;
+overflow-y: hidden;
+}
+
+main .bloco-cinza {
+    background-color: #ccc;
+    width: 70%;
+    height: 291vh;
+    position: absolute;
+    top: 24%;
+    left: 14%;
+    z-index: 0;
+}
+
+main .bloco-conteudo{
+border: 1px solid black;
+    position: relative;
+    top: 8vw;
+    left: 15.5%;
+    background-color: rgb(255, 255, 255);
+    width:70%;
+    height: 314vh;
+    z-index: 1;
+
+}
+
+
+.bloco-conteudo .inicio{
+    position: relative;
+    left: 5.5vh;
+    top:2vh;
+    font-size: 12vh;
+    font-weight: 600;
+    background-color: white;
+    width: 30vh;
+    z-index: 1;
+}
+
+.bloco-conteudo .linha2{
+        position: relative;
+        background-color: black;
+        width: 32vw;
+        height: 0.6vh;
+        color: transparent;
+        left: 45%;
+        z-index: 0;
+}
+
+.bloco-conteudo .data{
+    position: relative;
+    top: -5vh;
+    left: 80%;
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+.bloco-conteudo .pesquisa{
+    background-color: #ccc;
+    border-radius: 70px;
+    width: 45vh;
+    height: 5vh;
+    position: relative;
+    top: 0;
+    left: 38%;
+    border: none;
+}
+
+.bloco-conteudo .pesquisa input{
+    background-color: #ccc;
+    border-radius: 70px;
+    width: 45vh;
+    height: 5vh;
+    position: relative;
+    border: none;
+
+}
+
+.bloco-conteudo .lupa{
+    position: absolute;
+    width: 2vw;
+    left: 90%;
+}
+
+.bloco-conteudo .em_alta{
+    position: relative; 
+    left: 4vw;
+    font-size: 4vh;
+    font-weight: 550;
+}
+
+/* FEED ******************************************************************************************/
+
+
+
+.noticiaEmAlta1{
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 2%;
+    left: 2vw;
+    background-color: white;
+    width: 46%;
+    height: 75vh;
+}
+
+.noticiaEmAlta1:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in;
+}
+
+.noticiaEmAlta1 .bloco-cinza-card{
+    border-radius: 30px;
+    width: 95%;
+    height: 60%;
+    left: 2vh;
+    top: 3vh;
+    position: relative;
+    background-color: #8d8989;
+}
+
+.noticiaEmAlta1 .Titulo{
+    position: relative;
+    color: rgb(0, 0, 0);
+    top: 1vh;
+    left: 3%;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.noticiaEmAlta1 h1{
+    position: relative;
+    top: 2vw;
+    left: 5vh;
+    width: 80%;
+}
+
+.noticiaEmAlta2{
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: -69VH;
+    left: 35vw;
+    background-color: white;
+    width: 46%;
+    height: 75vh;
+}
+
+.noticiaEmAlta2:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in;
+}
+
+.noticiaEmAlta2 .bloco-cinza-card{
+    border-radius: 30px;
+    width: 95%;
+    height: 60%;
+    left: 2vh;
+    top: 3vh;
+    position: relative;
+    background-color: #8d8989;
+}
+
+.noticiaEmAlta2 .Titulo{
+    position: relative;
+    color: rgb(0, 0, 0);
+    top: 1vh;
+    left: 3%;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.noticiaEmAlta2 h1{
+    position: relative;
+    top: 2vw;
+    left: 5vh;
+    width: 80%;
+}
+
+.noticiaEmAlta3{
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: -28vw;
+    left: 2vw;
+    background-color: white;
+    width: 46%;
+    height: 75vh;
+}
+
+.noticiaEmAlta3:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in;
+}
+
+.noticiaEmAlta3 .bloco-cinza-card{
+    border-radius: 30px;
+    width: 95%;
+    height: 60%;
+    left: 2vh;
+    top: 3vh;
+    position: relative;
+    background-color: #8d8989;
+}
+
+.noticiaEmAlta3 .Titulo{
+    position: relative;
+    color: rgb(0, 0, 0);
+    top: 1vh;
+    left: 3%;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.noticiaEmAlta3 h1{
+    position: relative;
+    top: 2vw;
+    left: 5vh;
+    width: 80%;
+}
+
+.noticiaEmAlta4{
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: -138VH;
+    left: 35vw;
+    background-color: white;
+    width: 46%;
+    height: 75vh;
+}
+
+.noticiaEmAlta4:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in;
+}
+
+.noticiaEmAlta4 .bloco-cinza-card{
+    border-radius: 30px;
+    width: 95%;
+    height: 60%;
+    left: 2vh;
+    top: 3vh;
+    position: relative;
+    background-color: #8d8989;
+}
+
+.noticiaEmAlta4 .Titulo{
+    position: relative;
+    color: rgb(0, 0, 0);
+    top: 1vh;
+    left: 3%;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.noticiaEmAlta4 h1{
+    position: relative;
+    top: 2vw;
+    left: 5vh;
+    width: 80%;
+}
+
+.noticiaEmAlta5{
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: -58vw;
+    left: 2vw;
+    background-color: white;
+    width: 46%;
+    height: 75vh;
+}
+
+.noticiaEmAlta5:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in;
+}
+
+.noticiaEmAlta5 .bloco-cinza-card{
+    border-radius: 30px;
+    width: 95%;
+    height: 60%;
+    left: 2vh;
+    top: 3vh;
+    position: relative;
+    background-color: #8d8989;
+}
+
+.noticiaEmAlta5 .Titulo{
+    position: relative;
+    color: rgb(0, 0, 0);
+    top: 1vh;
+    left: 3%;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.noticiaEmAlta5 h1{
+    position: relative;
+    top: 2vw;
+    left: 5vh;
+    width: 80%;
+}
+
+.noticiaEmAlta6{
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: -91.5vw;
+    left: 35vw;
+    background-color: white;
+    width: 46%;
+    height: 75vh;
+}
+
+.noticiaEmAlta6:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: transform 0.1s ease-in;
+}
+
+.noticiaEmAlta6 .bloco-cinza-card{
+    border-radius: 30px;
+    width: 95%;
+    height: 60%;
+    left: 2vh;
+    top: 3vh;
+    position: relative;
+    background-color: #8d8989;
+}
+
+.noticiaEmAlta6 .Titulo{
+    position: relative;
+    color: rgb(0, 0, 0);
+    top: 1vh;
+    left: 3%;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.noticiaEmAlta6 h1{
+    position: relative;
+    top: 2vw;
+    left: 5vh;
+    width: 80%;
+}
+

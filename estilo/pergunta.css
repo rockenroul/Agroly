@@ -1,0 +1,396 @@
+@font-face {
+    font-family: HK;
+    src: url(HankenGrotesk-VariableFont_wght.ttf);
+}
+
+
+
+body{
+    background-color: #ffffff;
+    font-family: HK;
+}
+
+
+/*Header -=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+.header{
+    position: fixed;
+    background-color: #83ce51;
+    color: white;
+    height: 10vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.header .logo {
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    height: 9vh;
+    border-radius: 100vh;  
+}
+
+.header .home{
+    position: absolute;
+    left: 82%;
+    top: 27%;
+    font-size: 4vh;
+    text-decoration: none;
+    color: white;
+}
+
+.header .news{
+    position: absolute;
+    left: 85%;
+    top: 27%;
+    font-size: 4vh;
+    text-decoration: none;
+    color: white;
+}
+
+.header .market{
+    position: absolute;
+    left: 88%;
+    top: 27%;
+    font-size: 4vh;
+    text-decoration: none;
+    color: white;
+}
+
+.header .menu{
+    color: black;
+    position: relative;
+    background-color: white;
+    width: 10%;
+    height: 0vh;
+    left: 90%;
+    font-size: 2.7vh;
+    z-index: 2;
+    border: 1px solid black;
+    text-align: center;
+    transition: height 0.3s ease;
+    overflow: hidden;
+}
+
+.header .menu.expanding{
+    height: 35vh;
+}
+
+.header .menu .Eu{
+    position: relative;
+    top: 4vh;
+    left: -5vh;
+}
+
+.header .menu .MinhaConta{
+    position: relative;
+    top: 10vh;
+    left: 1vh;
+}
+
+.header .menu .linha{
+    position: relative;
+    background-color: black;
+    width: 90%;
+    height: 0.2vh;
+    color: transparent;
+    top: 10.5vh;
+    left: 1vh;
+}
+
+.header .menu .linha2{
+    position: relative;
+    background-color: black;
+    width: 90%;
+    height: 0.2vh;
+    color: transparent;
+    top: 11.5vh;
+    left: 1vh;
+}
+
+.header .menu .linha3{
+    position: relative;
+    background-color: black;
+    width: 90%;
+    height: 0.2vh;
+    color: transparent;
+    top: 12.5vh;
+    left: 1vh;
+}
+
+.header .menu .Conteudo{
+    position: relative;
+    top: 11vh;
+    left: 1vh;
+}
+
+.header .menu .Configuracoes{
+    position: relative;
+    top: 12vh;
+    left: 1vh;
+}
+
+.header .menu .Sair{
+    position: relative;
+    top: 13vh;
+    left: 1vh;
+}
+
+.header .usuario{
+    position: absolute;
+    top: 4%;
+    left: 94%;
+    background-color: white;
+    border-radius: 100vh;
+    height: 9vh;
+    z-index: 3;
+}
+
+
+/* Main -=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+main .bloco-cinza {
+    background-color: #ccc;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 24%;
+    left: 3%;
+    z-index: 0;
+}
+
+
+main .bloco-cinza-card img{
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 1;
+    object-fit: cover;
+}
+
+main .bloco-pergunta{
+border: 1px solid black;
+    position: relative;
+    top: 8vw;
+    left: 4.5%;
+    background-color: rgb(255, 255, 255);
+    width:70%;
+    height: 100vh;
+    z-index: 1;
+
+}
+
+
+.bloco-pergunta .TituloPergunta{
+    position: relative;
+    left: 5.5vh;
+    top:2vh;
+    font-size: 4vh;
+    font-weight: 600;
+    background-color: white;
+    width: 35vh;
+    z-index: 1;
+}
+
+.bloco-pergunta .dataPergunta{
+    position: relative;
+    top: 7vh;
+    left: 35%;
+    font-size: 2.5vh;
+    font-weight: 550;
+}
+
+.bloco-pergunta b{
+    position: absolute;
+    top: 20vh;
+    left: 60%;
+    background-color: #83ce51;
+    height: 4vh;
+    width: 13vw;
+    border-radius: 10vw;
+    font-size: 2vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bloco-pergunta b:hover{
+    background-color: #aff581;
+    cursor: pointer;
+}
+
+.bloco-pergunta .pesquisa{
+    background-color: #ccc;
+    border-radius: 70px;
+    width: 45vh;
+    height: 4vh;
+    position: relative;
+    top: -12vh;
+    left: 55%;
+    border: none;
+}
+
+.bloco-pergunta .pesquisa input{
+    background-color: #ccc;
+    border-radius: 70px;
+    width: 45vh;
+    height: 4vh;
+    position: relative;
+    border: none;
+
+}
+
+.bloco-pergunta .lupa{
+    position: absolute;
+    width: 2vw;
+    left: 90%;
+}
+
+.bloco-pergunta .Autor{
+    position: relative; 
+    left: 5vw;
+    font-size: 3vh;
+    font-weight: 550;
+}
+
+.bloco-pergunta .por{
+    position: absolute; 
+    left: 3vw;
+    top: 9.7vw;
+    font-size: 2vh;
+    font-weight: 10;
+}
+
+
+/* FEED ******************************************************************************************/
+
+
+
+.noticiaEmAlta1{
+    border-radius: 30px;
+    border: 1px solid black;
+    position: relative;
+    top: 2%;
+    left: 2vw;
+    background-color: white;
+    width: 92%;
+    height: 53vh;
+}
+
+.noticiaEmAlta1 .bloco-cinza-card{
+    border-radius: 30px;
+    width: 97%;
+    height: 75%;
+    left: 2vh;
+    top: 2vh;
+    position: relative;
+    background-color: #8d8989;
+}
+
+.bloco-cinza-card a{
+    position: relative;
+    color: white;
+    top: 30vh;
+    left: 3%;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.noticiaEmAlta1 h1{
+    position: relative;
+    top: 2vw;
+    left: 5vh;
+}
+
+
+/* aside -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.card{
+    position: absolute;
+    background-color: white;
+    width: 35vh;
+    height: 45vh;
+    top: 13vh;
+    left: 80vw;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.card .cardBlocoDentro{
+    position: relative;
+    border-radius: 30px;
+    width: 92%;
+    height: 28vh;
+    left: 1.5vh;
+    top: 2.5vh;
+    position: relative;
+    background-color: #8d8989;
+}
+.card h1{
+    top: 5vh;
+    left: 2vh;
+    position: relative;
+}
+
+.card .cardBlocoDentro a{
+    position: relative;
+    color: white;
+    top: 18vh;
+    left: 2vh;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.card .cardBlocoDentro img{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+
+.card2{
+    position: absolute;
+    background-color: white;
+    width: 35vh;
+    height: 45vh;
+    top: 60vh;
+    left: 80vw;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.card2 .cardBlocoDentro{
+    position: relative;
+    border-radius: 30px;
+    width: 92%;
+    height: 28vh;
+    left: 1.5vh;
+    top: 2.5vh;
+    position: relative;
+    background-color: #8d8989;
+}
+.card2 h1{
+    top: 5vh;
+    left: 2vh;
+    position: relative;
+}
+
+.card2 .cardBlocoDentro a{
+    position: relative;
+    color: white;
+    top: 18vh;
+    left: 2vh;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.card2 .cardBlocoDentro img{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    border-radius: 15px;
+    z-index: 1;
+}
